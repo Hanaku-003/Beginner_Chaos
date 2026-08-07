@@ -23,7 +23,7 @@ a=int(input("enter first number :"))
 b=int(input("enter second number :"))
 
 result=None
-if fuck == "1":
+if choice == "1":
     result= plus(a,b)
         
 elif choice == "2":
