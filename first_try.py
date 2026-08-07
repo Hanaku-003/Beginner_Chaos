@@ -17,7 +17,7 @@ numbers=["1:Addition","2:Subtraction","3:Multiplication","4:Division"]
 for x in numbers:
           print(x)
 
-fuck =input("print the number of what the fuck do you want please: ")
+choice =input("print the number of what do you want please: ")
 
 a=int(input("enter first number :"))
 b=int(input("enter second number :"))
@@ -26,19 +26,19 @@ result=None
 if fuck == "1":
     result= plus(a,b)
         
-elif fuck == "2":
+elif choice == "2":
     result= minus(a,b)
         
 
-elif fuck == "3":
+elif choice == "3":
     result= X(a,b)
        
     
-elif fuck == "4":
+elif choice == "4":
     result= div(a,b)
 else:
-    result="كل خرا"
+    result="IDKا"
                 
          
 print(result)
-print("thanks for trying وخرا بشرفك")
+print("thanks for trying ")
