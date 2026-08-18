@@ -9,5 +9,20 @@ area=length*width
 print(f"the shape's area is {area}")
 area_round=round(area)
 print(f"The rounding for the area unit is:{area_round}")
+question=input("Do you want to measure the dimension of your shape?: |yes|or |no|")
+import math
+if question.lower()=="yes":
+    print("calculating")
+    length_pow=int(length**2)
+    width_pow=int(width**2)
+    total=length_pow+width_pow
+    dim=math.sqrt(total)
+    print(dim)
+    round_dim=round(dim)
+    print(f"the rounding for the dimension of your shape is:{round_dim}")
+elif question.lower()=="no":
+    print("ok")
+else:
+    print("something is wrong.please try later ")
 
 
