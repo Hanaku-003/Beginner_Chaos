@@ -3,6 +3,7 @@ width=float(input("what is the width of your Rectangle?:"))
 print("calculating...")
 if length==width:
     print("wait")
+    print("Checking something...")
     print("well,this is a square")
 area=length*width
 print(f"the shape's area is {area}")
