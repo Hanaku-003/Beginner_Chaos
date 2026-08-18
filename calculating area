@@ -1,8 +1,8 @@
-length=int(input("what is the length of your Rectangle?:"))
-width=int(input("what is the width of your Rectangle?:"))
+length=float(input("what is the length of your Rectangle?:"))
+width=float(input("what is the width of your Rectangle?:"))
 print("calculating...")
 area=length*width
-print(area)
+print(f"the shape's area is {area}")
 if length==width:
     print("well,this is a square")
 
