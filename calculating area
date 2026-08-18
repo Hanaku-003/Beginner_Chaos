@@ -3,3 +3,6 @@ width=int(input("what is the width of your Rectangle?:"))
 print("calculating...")
 area=length*width
 print(area)
+if length==width:
+    print("well,this is a square")
+
