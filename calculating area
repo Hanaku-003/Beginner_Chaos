@@ -25,11 +25,14 @@ def shape_calcule():
         print("ok")
     else:
         print("something is wrong.please try later ")
-    ques=input("wanna try again or quit?|again|or|quit|:")
-    if ques.lower()=='again':
-        shape_calcule()
-    elif ques.lower()=='quit':
-        quit
+    while True:
+        ques=input("wanna try again or quit?|again|or|quit|:")
+        if ques.lower()=='again':
+           shape_calcule()
+        elif ques.lower()=='quit':
+           break
+        else:
+            print("please enter 'again' or'quit'")
     
 shape_calcule()
 
