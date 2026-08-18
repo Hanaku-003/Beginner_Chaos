@@ -1,8 +1,12 @@
 length=float(input("what is the length of your Rectangle?:"))
 width=float(input("what is the width of your Rectangle?:"))
 print("calculating...")
+if length==width:
+    print("wait")
+    print("well,this is a square")
 area=length*width
 print(f"the shape's area is {area}")
-if length==width:
-    print("well,this is a square")
+area_round=round(area)
+print(f"The rounding for the area unit is:{area_round}")
+
 
