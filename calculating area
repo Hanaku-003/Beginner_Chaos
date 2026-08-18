@@ -13,8 +13,8 @@ question=input("Do you want to measure the dimension of your shape?: |yes|or |no
 import math
 if question.lower()=="yes":
     print("calculating")
-    length_pow=int(length**2)
-    width_pow=int(width**2)
+    length_pow=length**2
+    width_pow=width**2
     total=length_pow+width_pow
     dim=math.sqrt(total)
     print(dim)
