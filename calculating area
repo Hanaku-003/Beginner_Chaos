@@ -1,4 +1,5 @@
 def shape_calcule():
+    print("Please enter numbers only")
     length=float(input("what is the length of your Rectangle?:"))
     width=float(input("what is the width of your Rectangle?:"))
     print("calculating...")
