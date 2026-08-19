@@ -38,6 +38,8 @@ def shape_calcule():
         if ques_2.lower()=='again':
              print("( •̀ ω •́ )✧ Ok!")
              shape_calcule()
+        elif ques_2.lower()=='quit':
+             return
     
 shape_calcule()
 
