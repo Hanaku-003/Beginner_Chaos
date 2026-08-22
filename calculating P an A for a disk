@@ -3,31 +3,32 @@ import math
 def ap_calcul():
     print(" NOTE:please enter numbers only")
     radius=float(input("Please enter the radius value:"))
+    unit=input("What is the unit of length?")
     ans=input("If you want to calculate the perimeter enter: P. If you want to calculate the area, please enter A :")
     
     if ans.upper()=="P" :
         P=(math.pi*radius*2)
-        print(f"the perimeter of your circle is{P}")
+        print(f"the perimeter of your circle is{P}{unit}")
         round_P=round(P)
-        print(f'the rounding for the perimeter is{round_P}')
+        print(f'the rounding for the perimeter is{round_P}{unit}')
     elif ans.upper()=="A":
         A= (math.pi*radius**2)
-        print(f"the area of your disk is {A}")
+        print(f"the area of your disk is {A}{unit}²")
         round_A=round(A)
-        print(f'the rounding for the perimeter is{round_A}')
+        print(f'the rounding for the perimeter is{round_A}{unit}²')
     else:
         print("something is wrong. please try again with A and P only ")
         ans=input("If you want to calculate the perimeter enter: P. If you want to calculate the area, please enter A :")
         if ans.upper()=="P" :
              P=(math.pi*radius*2)
-             print(f"the perimeter of your circle is{P}")
+             print(f"the perimeter of your circle is{P}{unit}")
              round_P=round(P)
-             print(f'the rounding for the perimeter is {round_P}')
+             print(f'the rounding for the perimeter is {round_P}{unit}')
         elif ans.upper()=="A":
              A= (math.pi*radius**2)
-             print(f"the area of your disk is {A}")
+             print(f"the area of your disk is {A}{unit}²")
              round_A=round(A)
-             print(f'the rounding for the perimeter is {round_A}')
+             print(f'the rounding for the perimeter is {round_A}{unit}²')
         
             
        
