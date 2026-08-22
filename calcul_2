@@ -1,0 +1,14 @@
+#Calculating the dimensions of a disk/circle
+import math
+radius=float(input("Please enter the radius value:"))
+ans=input("If you want to calculate the perimeter enter: P. If you want to calculate the area, please enter A :")
+if ans.upper()=="P" :
+    P=(math.pi*radius*2)
+    print(f"the perimeter of your circle is{P}")
+    round_P=round(P)
+    print(f'the rounding for the perimeter is{round_P}')
+elif ans.upper()=="A":
+    A= (math.pi*radius**2)
+    print(f"the area of your disk is {A}")
+    round_A=round(A)
+    print(f'the rounding for the perimeter is{round_A}')
