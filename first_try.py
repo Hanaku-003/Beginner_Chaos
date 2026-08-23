@@ -47,4 +47,13 @@ else:
                 
          
 print(result)
-print("thanks for trying ")
+print("result is :",result)
+
+extra=input ("to round your result, please print 'round'. only . else. just print'no'")
+if extra.lower()=='round':
+        print(round(result))
+        print("thanks for trying")
+elif extra.lower()=='no':
+        print("thanks for trying")
+        quit
+
