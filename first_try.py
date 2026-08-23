@@ -35,7 +35,13 @@ elif choice == "3":
        
     
 elif choice == "4":
-    result= div(a,b)
+        if b==0:
+            print("please try again without 0 as a secound number")
+            b=float(input("enter second number :"))
+            result=div(a,b)
+        
+        else:
+            result= div(a,b)
 else:
     result="IDKا"
                 
