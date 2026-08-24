@@ -21,14 +21,14 @@ def ap_calcul():
         ans=input("If you want to calculate the perimeter enter: P. If you want to calculate the area, please enter A :")
         if ans.upper()=="P" :
              P=(math.pi*radius*2)
-             print(f"the perimeter of your circle is{P}{unit}")
+             print(f"the perimeter of your circle is {P} {unit}")
              round_P=round(P)
-             print(f'the rounding for the perimeter is {round_P}{unit}')
+             print(f'the rounding for the perimeter is  {round_P} {unit}')
         elif ans.upper()=="A":
              A= (math.pi*radius**2)
-             print(f"the area of your disk is {A}{unit}²")
+             print(f"the area of your disk is  {A} {unit}²")
              round_A=round(A)
-             print(f'the rounding for the perimeter is {round_A}{unit}²')
+             print(f'the rounding for the area is  {round_A} {unit}²')
         
             
        
