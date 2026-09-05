@@ -1,7 +1,7 @@
-def cool (n):
+def Fibonacci (n):
     limit=int(input("to put a limit . select a number to put it to the bower of 10(only the number of the bower please:"))
         
-    n_2=1
+    n_2=n
     print(n)
     print(n_2)
     while True:
@@ -14,7 +14,7 @@ def cool (n):
         
 greeting=input("Hii, wanna start calculating Fibonacci? |yes||nah|")
 if greeting.lower()== "yes" or 'yes' in greeting.lower():
-    n=1
-    cool(n)
+    n=int(input("we know that Fibonacci starts from 1, put what if it started from another number? DO IT with 1 or a random number:"))
+    Fibonacci(n)
 else:
     quit
