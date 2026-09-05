@@ -1,5 +1,6 @@
 def cool (n):
-    
+    limit=int(input("to put a limit . select a number to put it to the bower of 10(only the number of the bower please:)"))
+        
     n_2=1
     print(n)
     print(n_2)
@@ -8,7 +9,7 @@ def cool (n):
         n_2+=n
         print(n)
         print(n_2)
-        if n >10**99:
+        if n >10**limit:
             break
         
 greeting=input("Hii, wanna start calculating Fibonacci? |yes||nah|")
@@ -16,4 +17,3 @@ if "yes" in greeting.lower():
     n=1
     cool(n)
 else:
-    quit
