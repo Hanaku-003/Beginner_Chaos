@@ -1,0 +1,23 @@
+    n=1
+    n_2=1
+    print(n)
+    print(n_2)
+    while True:
+        n+=n_2
+        n_2+=n
+        print(n)
+        print(n_2)
+        if 1000000000000000>n>100000000000 :
+            answer=input("stop? |yes|no|")
+            if answer.lower()=="no":
+                continue
+            elif answer.lower()=='yes':
+                break
+            else:
+                break
+        
+greeting=input("Hii, wanna start calculating Fibonacci? |yes||nah|")
+if "yes" in greeting.lower():
+    n=1
+    cool(n)
+else:
