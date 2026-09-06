@@ -15,10 +15,11 @@ def Fibonacci (n):
 greeting=input("Hii, wanna start calculating Fibonacci? |yes||nah|")
 if greeting.lower()== "yes" or 'yes' in greeting.lower():
     n=int(input("we know that Fibonacci starts from 1, put what if it started from another number? DO IT with 1 or a random number:"))
-if n==0:
+elif n==0 :
+    
     n=int(input("you can't do it with 0 it's gonna stay a 0 forever; try again with a number  that =1 or >1 please :"))
     Fibonacci(n)
-elif n>=1:
+if n>=1:
     Fibonacci(n)
 else:
     quit
