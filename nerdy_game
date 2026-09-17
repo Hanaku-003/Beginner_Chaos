@@ -2,38 +2,43 @@ import random
 nums=['1','2','3','4','5','6','7','8','9']
 num=random.choice(nums)
 num2=random.choice(nums)
-
-def calcul_1(num,num2):
-    tries=int(input("how many :"))
+tries=int(input("how many :"))
+finich=False
+false_ans= 0
+correct= 0
+tried= 0
+def calcul_1(num,num2,tried,correct,false_ans):
+    
     answer=input(f"{num}+{num2}=...")
+    
     while tried!=tries:
-        finich=False
-        false_ans= 0
-        correct= 0
-        tried= 0
+        
         if int(answer) ==(int(num)+int(num2)):    
             correct+=1
             tried+=1
-            print(f"fuck{tried}")
             num=random.choice(nums)
             num2=random.choice(nums)
-            return calcul_1(num,num2)
             
+            if tried==tries:
+                finich=True
+                break
+            else:
+                return calcul_1(num,num2,tried,correct,false_ans)
         else:
             if tried==tries:
                 finich=True
+                break
             else:
-                print("wrong")
                 false_ans+=1
                 tried+=1
-                print(f"fuck{tried}")
-                return calcul_1(num,num2)
+                return calcul_1(num,num2,tried,correct,false_ans)
     if tried==tries:
         finich=True
+        
         
 
     if finich :
         print(f"correct answers{correct}")
         print(f"incorrect answer{false_ans}")
         
-calcul_1(num,num2)
+calcul_1(num,num2,tried,correct,false_ans)
