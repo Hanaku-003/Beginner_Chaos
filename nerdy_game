@@ -5,21 +5,20 @@ num2=random.choice(nums)
 
 def calcul_1(num,num2):
     tries=int(input("how many :"))
-    finich=False
-    false_ans= 0
-    correct= 0
-    tried= 0
     answer=input(f"{num}+{num2}=...")
-    if tried!=tries:
+    while tried!=tries:
+        finich=False
+        false_ans= 0
+        correct= 0
+        tried= 0
         if int(answer) ==(int(num)+int(num2)):    
             correct+=1
             tried+=1
             print(f"fuck{tried}")
             num=random.choice(nums)
             num2=random.choice(nums)
-            calcul_1(num,num2)
-            if tried==tries:
-                finich=True
+            return calcul_1(num,num2)
+            
         else:
             if tried==tries:
                 finich=True
@@ -28,8 +27,8 @@ def calcul_1(num,num2):
                 false_ans+=1
                 tried+=1
                 print(f"fuck{tried}")
-                calcul_1(num,num2)
-    elif tried==tries:
+                return calcul_1(num,num2)
+    if tried==tries:
         finich=True
         
 
