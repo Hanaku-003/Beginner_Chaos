@@ -1,0 +1,40 @@
+import random
+nums=['1','2','3','4','5','6','7','8','9']
+num=random.choice(nums)
+num2=random.choice(nums)
+
+def calcul_1(num,num2):
+    tries=int(input("how many :"))
+    finich=False
+    false_ans= 0
+    correct= 0
+    tried= 0
+    answer=input(f"{num}+{num2}=...")
+    if tried!=tries:
+        if int(answer) ==(int(num)+int(num2)):    
+            correct+=1
+            tried+=1
+            print(f"fuck{tried}")
+            num=random.choice(nums)
+            num2=random.choice(nums)
+            calcul_1(num,num2)
+            if tried==tries:
+                finich=True
+        else:
+            if tried==tries:
+                finich=True
+            else:
+                print("wrong")
+                false_ans+=1
+                tried+=1
+                print(f"fuck{tried}")
+                calcul_1(num,num2)
+    elif tried==tries:
+        finich=True
+        
+
+    if finich :
+        print(f"correct answers{correct}")
+        print(f"incorrect answer{false_ans}")
+        
+calcul_1(num,num2)
