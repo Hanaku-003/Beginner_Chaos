@@ -7,7 +7,7 @@ finich=False
 false_ans= 0
 correct= 0
 tried= 0
-def calcul_1(num,num2,tried,correct,false_ans):
+def calcul_1(num,num2,tried,correct,false_ans,finich):
     
     answer=input(f"{num}+{num2}=...")
     
@@ -23,7 +23,7 @@ def calcul_1(num,num2,tried,correct,false_ans):
                 finich=True
                 break
             else:
-                return calcul_1(num,num2,tried,correct,false_ans)
+                return calcul_1(num,num2,tried,correct,false_ans,finich)
         else:
             if tried==tries:
                 finich=True
@@ -31,7 +31,7 @@ def calcul_1(num,num2,tried,correct,false_ans):
             else:
                 false_ans+=1
                 tried+=1
-                return calcul_1(num,num2,tried,correct,false_ans)
+                return calcul_1(num,num2,tried,correct,false_ans,finich)
     if tried==tries:
         finich=True
         
@@ -41,4 +41,4 @@ def calcul_1(num,num2,tried,correct,false_ans):
         print(f"correct answers{correct}")
         print(f"incorrect answer{false_ans}")
         
-calcul_1(num,num2,tried,correct,false_ans)
+calcul_1(num,num2,tried,correct,false_ans,finich)
