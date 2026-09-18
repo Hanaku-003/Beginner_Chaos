@@ -31,6 +31,8 @@ def calcul_1(num,num2,tried,correct,false_ans,finich):
             else:
                 false_ans+=1
                 tried+=1
+                num=random.choice(nums)
+                num2=random.choice(nums)
                 return calcul_1(num,num2,tried,correct,false_ans,finich)
     if tried==tries:
         finich=True
@@ -40,5 +42,11 @@ def calcul_1(num,num2,tried,correct,false_ans,finich):
     if finich :
         print(f"correct answers{correct}")
         print(f"incorrect answer{false_ans}")
+        if false_ans>1:
+            print(f"you are stupid .{false_ans} INCORRECT answers??!")
+        elif false_ans==1:
+            print(f"you are stupid .ONE INCORRECT answer??!")
         
 calcul_1(num,num2,tried,correct,false_ans,finich)
+
+
